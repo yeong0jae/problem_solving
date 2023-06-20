@@ -20,3 +20,15 @@ def solution(n, arr1, arr2): # 정사각형n, 지도 배열
         tmp = ""
 
     return newmap
+
+# 더 나은 풀이 - 비트 연산을 이용
+
+def solution(n, arr1, arr2):
+    answer = []
+    for i,j in zip(arr1,arr2):
+        a12 = str(bin(i|j)[2:]) # or 연산으로 00이면 0, 나머지는 1이 되도록 연산 후 저장
+        a12=a12.rjust(n,'0') # n 자리로 채우기
+        a12=a12.replace('1','#') # 1은 #으로
+        a12=a12.replace('0',' ') # 0은 공백으로
+        answer.append(a12)
+    return answer
