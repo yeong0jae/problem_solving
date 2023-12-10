@@ -1,6 +1,6 @@
-# kakao_coding_test
+# problem_solving
 
-카카오 코딩테스트 기출 난이도 순 풀이
+코딩테스트 기출 난이도 순 풀이
 
 2023 KAKAO BLIND RECRUITMENT
 2022 KAKAO TECH INTERNSHIP
